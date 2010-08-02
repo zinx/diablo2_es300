@@ -1,0 +1,35 @@
+*** CURRENTLY FOR 1.12A ONLY ***
+
+Includes all ES 3.00 R6D changes not in my other mods.
+
+Ported from ES 3.00 R6D direct dll hacks.
+
+Features:
+	* Quest skill rewards multiplied by 2
+	* Akara gives a rare grand charm for rescuing Cain
+	* Ormus gives a jewel instead of ring
+	* Other stuff I've yet to decipher!
+
+Install (ADVANCED):
+	* Only tested with ES 3.00 R6D and R6E!
+	* Backup your es300r dir
+	* Save es300r/data/global/excel/itemratios.txt while the game is running.
+	* Copy it back when you exit.  ES 3.00 R crashes on drops without it.
+	* Erase all .dlls in your es300r dir
+	* Copy the PlugY 9.00 (or higher) dll to es300r
+	* Copy es300.dll to your es300r dir
+	* Install my other mods (check author or use site; mod names ambiguous)
+		loader
+		mercmod
+		gemfix
+		savesize
+		goldlim
+	* Add all of them (including es300.dll) to loader.ini (see loader docs)
+	* Add loader.dll to PlugY.ini's DllToLoad
+	* Launch Game.exe from your es300r dir with -direct -txt to play
+	* Hope everything went right.
+
+Site:
+	http://zenthought.org/project/diablo2
+
+- zinx <zinx@zenthought.org>

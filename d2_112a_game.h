@@ -1,0 +1,28 @@
+PATCH_BEGIN("D2Game.dll", 0xec2509e8)
+
+/* Eastern Sun 3.00 R6D - NO IDEA. */
+PATCH(0x489D0, 0xEB /* jmp short ... */)
+PATCH_ORIG(0x489D0, 0x75)
+
+PATCH(0x82F85, 0x19)
+PATCH_ORIG(0x82F85, 0x0E)
+
+/* Eastern Sun 3.00 R6D - Double skill rewards */
+PATCH(0x19DFB, 0x02)
+PATCH(0x4F902, 0x04)
+PATCH(0x73F85, 0x02)
+PATCH_ORIG(0x19DFB, 0x01)
+PATCH_ORIG(0x4F902, 0x02)
+PATCH_ORIG(0x73F85, 0x01)
+
+/* Eastern Sun 3.00 R6D - Cain quest reward (Akara) */
+PATCH(0x7560D, 'c', 'x', '3', ' ' /* item type */)
+PATCH(0x7561A, 0x07 /* rare */)
+PATCH_ORIG(0x7560D, 0x72, 0x69, 0x6E, 0x20)
+PATCH_ORIG(0x7561A, 0x04)
+
+/* Eastern Sun 3.00 R6D - Ormus reward */
+PATCH(0xBBE53, 'j', 'e', 'w', ' ')
+PATCH_ORIG(0xBBE53, 0x72, 0x69, 0x6E, 0x20)
+
+PATCH_END()

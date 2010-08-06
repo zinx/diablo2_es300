@@ -19,6 +19,7 @@ Install (ADVANCED):
 	* Erase all .dlls in your es300r dir
 	* Copy the PlugY 9.00 (or higher) dll to es300r
 	* Copy es300.dll to your es300r dir
+	* Copy levels.txt, lvlmaze.txt, and lvlprest.txt to your es300r/data/global/excel dir
 	* Install my other mods (check author or use site; mod names ambiguous)
 		loader
 		mercmod
